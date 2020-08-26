@@ -36,3 +36,7 @@ However, you can just modify your task that kills zoom, to run at the end times 
 For example, I have classes that end at 9:20 am, 11:20 am, and 4:20 am.
 
  * Thus, my kill_zoom.bat task is scheduled to run at 9:15 am, 11:15 am, and 4:15 am on M, W, F.
+
+[My Task Scheduler tasks for all my classes](https://i.imgur.com/EHcJNlE.png)
+
+[My end class task triggers](https://i.imgur.com/MtUyQH5.png)
