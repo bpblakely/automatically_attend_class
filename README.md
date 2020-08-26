@@ -20,6 +20,14 @@ What it looks like after setting it up:
   * Change the zoom link to the zoom link provided to you by your professor (in my case it's on Canvas)
     * Ideally you have 2 different zoom links. So you can try 2 different zoom links incase one doesn't work
   * Change your python executable and your call_cell_phone.py path location
+  
+# Edit call_cell_phone.py
+
+  * Pip install twilio to your python environment
+  * Create a twilio account and follow their docs to get your account_sid and auth_token.
+  * Generate a twilio number
+  * Change 'your_number' on line 9 to your cell phone number
+  * Change your_twilio_number on line 10 to your generate twilio number
 
 # Set up automation of these scripts using Windows Task Scheduler
 
@@ -40,3 +48,15 @@ For example, I have classes that end at 9:20 am, 11:20 am, and 4:20 am.
 [My Task Scheduler tasks for all my classes](https://i.imgur.com/EHcJNlE.png)
 
 [My end class task triggers](https://i.imgur.com/MtUyQH5.png)
+
+# Possible issues
+
+If you are taking an exam, towards the end of the class you will get prompty to exit your class. If you don't respond in 3 minutes it will terminate zoom.exe. This is obviously not ideal while taking an exam. So, you can either set it to not run on the dates of your exams or once you get prompted to terminate zoom you can do the following to easily stop the script;
+  
+  1. Hit n to not terminate zoom and wait for 5 minutes
+  2. Press Control + C to forcefully stop the waiting
+  3. Then hit y when prompted about terminating all tasks. 
+ 
+Likewise in step 3 you can hit n to repeat the loop of inputs and waiting 5 minutes.
+
+You can also just hit the x button...
