@@ -9,7 +9,7 @@ What it looks like after setting it up:
   4. If zoom.exe fails to launch (link is sometimes wonky), then execute call_cell_phone.py
   5. call_cell_phone.py uses Twilio in Python to automatically call your phone number (A Twilio account is free)
   6. You 'attend' class
-  7. 5 minutes before your class is scheduled to end launch kill_zoom.bat
+  7. Task Scheduler automatically runs kill_zoom.bat 5 minutes before your class is scheduled to end
   8. kill_zoom.bat prompts you with an option to either kill zoom or extend the time by 5 minutes
     * If no option is selected within 3 minutes, automatically kill zoom. This lets the program automatically exit the meeting if I am not present.
   9. Never have to wake up at 8 am for the rest of the semester (excluding exams)
